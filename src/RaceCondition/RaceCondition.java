@@ -10,7 +10,7 @@ public class RaceCondition {
 
         for (int i = 0; i < threads; i++) {
             threads1[i] = new Thread(new Caixa(c1));
-            threads1[i].start(); // Dá o "play" na thread
+            threads1[i].start();
         }
         for (int i = 0; i < threads; i++) {
             threads1[i].join();
